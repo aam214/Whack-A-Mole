@@ -1,0 +1,32 @@
+.body{
+background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/jungle.jpg);
+background-position: center;
+background-size: cover;
+color: white;
+font-family: "Lato", sans-serif;
+font-weight: 400;
+font-style: normal;
+height:100vh ;
+background-repeat: no-repeat;
+}
+h1{
+  text-shadow: 2px 2px black;
+  font-size: 50px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+h2{
+  text-align: center;
+  text-shadow: 2px 2px black;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+#game{
+  background-image: url(images/soil.png);
+  width: 580px;
+  height: 580px;
+  margin: 0 auto;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
