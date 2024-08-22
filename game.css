@@ -26,13 +26,6 @@ h4{
   font-size: 30px;
   text-shadow: 2px 2px black;
 }
-.monkey{
-  width: 300px;
-  margin-top: 200px;
-  float: left;
-  height: 300px;
-}
-
 #game{
   background: url(images/soil.png);
   background-size: cover;
@@ -53,9 +46,9 @@ border-radius: 100px;
 
 }
 #game div img{
-  width: 100px;
-  margin-left: 100px;
+  width: 120px;
+  margin-left: 80px;
   margin-top: 20px;
-  height: 100px;
+  height: 120px;
   position: absolute;
 }
