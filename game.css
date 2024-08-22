@@ -1,12 +1,12 @@
 .body{
-background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/jungle.jpg);
+background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(images/jungle.jpg);
 background-position: center;
 background-size: cover;
 color: white;
 font-family: "Lato", sans-serif;
 font-weight: 400;
 font-style: normal;
-
+height: 100vh;
 background-repeat: no-repeat;
 }
 h1{
@@ -22,6 +22,7 @@ h2{
   letter-spacing: 2px;
 }
 h4{
+  letter-spacing: 5px;
   text-align: center;
   font-size: 30px;
   text-shadow: 2px 2px black;
@@ -34,11 +35,12 @@ h4{
 margin: 0 auto;
   border-radius: 8px;
   display: flex;
-  border: 2px solid white;
+box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
   flex-wrap: wrap;
 }
 #game div {
-  width: 180px;
+  width: 170px;
+  margin: 10px;
 border-radius: 100px;
   height: 180px;
   background-image: url(images/hole.png);
@@ -48,6 +50,7 @@ border-radius: 100px;
 #game div img{
   width: 120px;
   margin-left: 80px;
+  cursor: pointer;
   margin-top: 20px;
   height: 120px;
   position: absolute;

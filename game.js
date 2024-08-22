@@ -14,8 +14,8 @@ function setUpGame() {
     hole.addEventListener("click", selectHole);
     document.getElementById("game").appendChild(hole);
   }
-  setInterval(showBug, 1500);
-  setInterval(showMonkey, 3000)
+  setInterval(showBug, 1000);
+  setInterval(showMonkey, 2000)
 }
 
 function getRandomImg() {
