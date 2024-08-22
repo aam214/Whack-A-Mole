@@ -48,10 +48,10 @@ border-radius: 100px;
 
 }
 #game div img{
-  width: 120px;
+  width: 110px;
   margin-left: 80px;
   cursor: pointer;
   margin-top: 20px;
-  height: 120px;
+  height: 110px;
   position: absolute;
 }
