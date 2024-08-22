@@ -45,6 +45,7 @@ border-radius: 100px;
   height: 180px;
   background-image: url(images/hole.png);
   background-size: cover;
+  flex-wrap: wrap;
 
 }
 #game div img{
@@ -54,4 +55,20 @@ border-radius: 100px;
   margin-top: 20px;
   height: 110px;
   position: absolute;
+}
+
+@media(max-width:500px){
+  #game{
+    width: 390px;
+  height: 390px;
+}
+#game div {
+  width: 109px;
+  height: 109px;
+}
+#game div img{
+    width: 80px;
+height: 80px;
+margin-left: 1px;
+}
 }
