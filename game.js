@@ -33,7 +33,7 @@ currentBug.innerHTML = '';
 let bug = document.createElement("img");
 bug.src = "./bug.png";
 let random = getRandomImg();
-if(currentMonkey && currentMonkey.id == random) {
+if (currentMonkey && currentMonkey.id == random) {
   return;
 }
 
@@ -52,7 +52,7 @@ let monkey = document.createElement("img");
 monkey.src ="./monkey.png";
 
 let random = getRandomImg();
-if(currentBug && currentBug.id == random) {
+if (currentBug && currentBug.id == random) {
   return;
 }
 currentMonkey = document.getElementById(random);
@@ -68,6 +68,9 @@ function selectHole() {
     document.getElementById("score").innerHTML=
     score.toString();
   }
-  else (this== currentMonkey).innerHTML= "Game Over!" + score.toString();
+  else if (this== currentMonkey) {
+  document.getElementById("score").innerHTML =
+  "Game Over! " + "Score: " + score.toString();
   gameOver = true;
+}
 }
