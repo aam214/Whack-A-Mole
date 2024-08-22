@@ -6,12 +6,12 @@ color: white;
 font-family: "Lato", sans-serif;
 font-weight: 400;
 font-style: normal;
-height:100vh ;
+
 background-repeat: no-repeat;
 }
 h1{
   text-shadow: 2px 2px black;
-  font-size: 50px;
+  font-size: 59px;
   letter-spacing: 4px;
   text-align: center;
 }
@@ -26,31 +26,36 @@ h4{
   font-size: 30px;
   text-shadow: 2px 2px black;
 }
-img{
+.monkey{
   width: 300px;
   margin-top: 200px;
   float: left;
   height: 300px;
 }
-.board{
-  display: flex;
-}
+
 #game{
-  background-image: url(images/soil.png);
-  width: 600px;
-  height: 600px;
+  background: url(images/soil.png);
+  background-size: cover;
+  width: 580px;
+  height: 580px;
 margin: 0 auto;
   border-radius: 8px;
   display: flex;
-  border: 2px solid black;
+  border: 2px solid white;
   flex-wrap: wrap;
 }
 #game div {
   width: 180px;
-  margin:10px;
 border-radius: 100px;
   height: 180px;
   background-image: url(images/hole.png);
   background-size: cover;
-  background-repeat: no-repeat;
+
+}
+#game div img{
+  width: 100px;
+  margin-left: 100px;
+  margin-top: 20px;
+  height: 100px;
+  position: absolute;
 }

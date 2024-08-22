@@ -1,9 +1,9 @@
-window.onload = function() {
-  playGame();
-}
 
-
-function playGame() {
+window.addEventListener('load', function() {
+  setUpGame();
+});
+let currentBug;
+function setUpGame() {
   for (let i= 0; i < 9; i++) {
     let hole = document.createElement("div");
     hole.id = i.toString();
@@ -16,13 +16,14 @@ function getRandomBug() {
   return random.toString();
 }
 
+function showBug(){
+if (currentBug) {
+currentBug.innerHTML = '';
+}
 
-function showBug() {
 let bug = document.createElement("img");
 bug.src = "./bug.png";
 let random = getRandomBug();
-
-currentMole = document.getElementById(random);
-currentMole.appendChild(bug);
-
+currentBug = document.getElementById(random);
+currentBug.appendChild(bug);
 }
