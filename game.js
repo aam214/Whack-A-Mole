@@ -21,7 +21,7 @@ function setUpGame() {
   setInterval(showMonkey, 2000);
 }
 
-function showRandomImg() {
+function showRandomHole() {
   let random = Math.floor(Math.random() * 9);
   return random.toString();
 }
@@ -35,12 +35,12 @@ currentBug.innerHTML = '';
 }
 let bug = document.createElement("img");
 bug.src = "./bug.png";
-let shown = showRandomImg();
-if (currentMonkey && currentMonkey.id == shown) {
+let random = showRandomHole();
+if (currentMonkey && currentMonkey.id == random) {
 return;
 }
 
-currentBug = document.getElementById(shown);
+currentBug = document.getElementById(random);
 currentBug.appendChild(bug);
 }
 
@@ -53,11 +53,11 @@ if (currentMonkey) {
 }
 let monkey = document.createElement("img");
 monkey.src ="./monkey.png";
-let shown = showRandomImg();
-if (currentBug && currentBug.id == shown) {
+let random = showRandomHole();
+if (currentBug && currentBug.id == random) {
   return;
 }
-currentMonkey = document.getElementById(shown);
+currentMonkey = document.getElementById(random);
 currentMonkey.appendChild(monkey);
 }
 
