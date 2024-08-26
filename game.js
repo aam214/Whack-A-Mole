@@ -6,6 +6,7 @@ let currentBug;
 let currentMonkey;
 let score = 0;
 let gameOver = false;
+let scoreEl = document.getElementById("score");
 let game = document.getElementById("game");
 
 
@@ -67,11 +68,10 @@ function selectHole() {
   }
   if (this == currentBug) {
     score +=10;
-    document.getElementById("score").innerHTML=
-    score.toString();
+    scoreEl.innerHTML= score.toString();
   }
   else if (this== currentMonkey) {
-  document.getElementById("score").innerHTML =
+ scoreEl.innerHTML =
   "Game Over! " + "Score: " + score.toString();
   gameOver = true;
 }
